@@ -31,3 +31,11 @@ print(torch.__version__)  #注意是双下划线
 # cuda是否可用
 print(torch.cuda.is_available())
 ```
+#### 遇到的BUG
+```bash
+NameError: name 'PartialState' is not defined.
+```
+原因分析：transformers的版本过高，需要指定安装4.28版本
+```bash
+pip install transformers==4.28.0
+```
