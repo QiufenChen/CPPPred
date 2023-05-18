@@ -39,3 +39,16 @@ NameError: name 'PartialState' is not defined.
 ```bash
 pip install transformers==4.28.0
 ```
+#### CPP数据集上的初步表现
+关于蛋白的诸多预训练模型见链接：https://huggingface.co/Rostlab
+本实验用的预训练模型是prot-bert-bfd, 代码参考：https://github.com/agemagician/ProtTrans/blob/19741d0e1e5f528235dec9508d01faadef0dced8/Fine-Tuning/ProtBert_BFD_FineTuning_MS.ipynb
+通过将fine-tune之后，我们的实验数据取得了不错的效果，如下图所示：
+![cffd98767e12279528f49171a9237dd](https://github.com/QiufenChen/CPPPred/assets/52032167/01282527-0b26-476b-9f20-8289977fc808)
+
+注: 顺利跑通prot-bert-bfd, 需要16G显存, 我的8G显存就跑不通, 头疼!!
+![image](https://github.com/QiufenChen/CPPPred/assets/52032167/7a175be5-d14e-443d-8404-f9d1f57f5f29)
+
+#### 接下来的学习方向
+目标: 做一个序列生成模型, 设计一个我们自己的CPPGan
+当前的想法：参考SeqGan的设计思路, 先把这条路走通, 然后再魔改
+![image](https://github.com/QiufenChen/CPPPred/assets/52032167/4b2905d9-4f07-468e-9b4e-6a7d5609f3ea)
