@@ -24,6 +24,9 @@ conda install -c conda-forge nb_conda
 # 在该环境中启动 jupyter notebook
 jupyter notebook
 ```
+切换内核的方法
+![image](https://github.com/QiufenChen/CPPPred/assets/52032167/db1a9a2b-aba0-4b33-ac42-5f9380cafc68)
+
 #### 查看pytorch版本的方法
 ```python
 import torch
