@@ -42,14 +42,16 @@ NameError: name 'PartialState' is not defined.
 ```bash
 pip install transformers==4.28.0
 ```
+**Out of memery**
+![image](https://github.com/QiufenChen/CPPPred/assets/52032167/8a8c4d7a-8cf0-4bf1-aa68-35c03dc90208)
+原因分析：我的电脑显存不够, 顺利跑通prot-bert-bfd, 至少需要10G(需要配置一个16G的显卡), 而我的只有8G显存!!
+![image](https://github.com/QiufenChen/CPPPred/assets/52032167/7a175be5-d14e-443d-8404-f9d1f57f5f29)
+
 #### CPP数据集上的初步表现
-关于蛋白的诸多预训练模型见链接：https://huggingface.co/Rostlab
-本实验用的预训练模型是prot-bert-bfd, 代码参考：https://github.com/agemagician/ProtTrans/blob/19741d0e1e5f528235dec9508d01faadef0dced8/Fine-Tuning/ProtBert_BFD_FineTuning_MS.ipynb
+关于蛋白的诸多预训练模型见链接：https://huggingface.co/Rostlab \
+本实验用的预训练模型是prot-bert-bfd, 代码参考：https://github.com/agemagician/ProtTrans/blob/19741d0e1e5f528235dec9508d01faadef0dced8/Fine-Tuning/ProtBert_BFD_FineTuning_MS.ipynb \
 通过将fine-tune之后，我们的实验数据取得了不错的效果，如下图所示：
 ![cffd98767e12279528f49171a9237dd](https://github.com/QiufenChen/CPPPred/assets/52032167/01282527-0b26-476b-9f20-8289977fc808)
-
-注: 顺利跑通prot-bert-bfd, 需要16G显存, 我的8G显存就跑不通, 头疼!!
-![image](https://github.com/QiufenChen/CPPPred/assets/52032167/7a175be5-d14e-443d-8404-f9d1f57f5f29)
 
 #### 接下来的学习方向
 目标: 做一个序列生成模型, 设计一个我们自己的CPPGan
